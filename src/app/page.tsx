@@ -42,16 +42,28 @@ const products: Product[] = [
   }
 ];
 
+const contactInfo = {
+  phone: '400-123-4567',
+  email: 'contact@jijiapin.com',
+  address: '上海市浦东新区张江高科技园区',
+  workingHours: '周一至周五 9:00-18:00'
+};
+
 export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+      {/* 顶部横幅 */}
+      <div className="bg-blue-600 text-white py-2 px-4 text-center">
+        <p className="text-sm">欢迎来到极佳品端 | 专业的智能办公解决方案提供商</p>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            创新产品展示
+            极佳品端产品展示
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            探索我们精心打造的产品系列，为您的工作和生活带来智能化升级体验
+            为您打造智能、高效、舒适的现代办公环境
           </p>
         </div>
         
@@ -108,6 +120,50 @@ export default function ProductsPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* 联系方式部分 */}
+        <div className="mt-20 bg-white rounded-2xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">联系我们</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900">电话</h3>
+              <p className="text-gray-600 mt-2">{contactInfo.phone}</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900">邮箱</h3>
+              <p className="text-gray-600 mt-2">{contactInfo.email}</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900">地址</h3>
+              <p className="text-gray-600 mt-2">{contactInfo.address}</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900">工作时间</h3>
+              <p className="text-gray-600 mt-2">{contactInfo.workingHours}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
