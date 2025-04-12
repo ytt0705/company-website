@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-20">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          欢迎来到我们的公司
+          欢迎来到技佳品端
         </h1>
         <p className="text-xl text-gray-600 mb-8">
           提供专业的产品和优质的服务
@@ -20,29 +20,58 @@ export default function Home() {
       </section>
 
       {/* 产品预览 Section */}
-      <section className="py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-          我们的产品
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* 示例产品卡片 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="h-48 bg-gray-200 relative">
-              {/* 这里可以放产品图片 */}
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">产品名称</h3>
-              <p className="text-gray-600 mb-4">产品简短描述</p>
-              <Link
-                href="/products"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                了解更多 →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  {/* 产品卡片1 */}
+  <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="h-48 bg-gray-200 relative">
+      {/* 这里可以放产品图片 */}
+    </div>
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">产品一</h3>
+      <p className="text-gray-600 mb-4">产品一简短描述</p>
+      <Link
+        href="/products/1"
+        className="text-blue-600 hover:text-blue-800"
+      >
+        了解更多 →
+      </Link>
+    </div>
+  </div>
+
+  {/* 产品卡片2 */}
+  <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="h-48 bg-gray-200 relative">
+      {/* 这里可以放产品图片 */}
+    </div>
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">产品二</h3>
+      <p className="text-gray-600 mb-4">产品二简短描述</p>
+      <Link
+        href="/products/2"
+        className="text-blue-600 hover:text-blue-800"
+      >
+        了解更多 →
+      </Link>
+    </div>
+  </div>
+
+  {/* 产品卡片3 */}
+  <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="h-48 bg-gray-200 relative">
+      {/* 这里可以放产品图片 */}
+    </div>
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">产品三</h3>
+      <p className="text-gray-600 mb-4">产品三简短描述</p>
+      <Link
+        href="/products/3"
+        className="text-blue-600 hover:text-blue-800"
+      >
+        了解更多 →
+      </Link>
+    </div>
+  </div>
+</div>
 
       {/* 公司优势 Section */}
       <section className="py-16 bg-gray-50">

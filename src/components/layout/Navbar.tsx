@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-gray-800">公司名称</span>
+              <span className="text-xl font-bold text-gray-800">极佳品端</span>
             </Link>
           </div>
           <div className="flex space-x-8">
