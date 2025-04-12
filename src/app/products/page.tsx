@@ -36,8 +36,8 @@ export default function ProductsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <Link 
+              href={`/products/${product.id}`} 
               key={product.id}
-              href={`/products/${product.id}`}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64">
@@ -51,7 +51,7 @@ export default function ProductsPage() {
               </div>
               <div className="p-6">
                 <div className="mb-2">
-                  <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                  <span className="inline-block px-2 py-1 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
                     {product.category}
                   </span>
                 </div>
@@ -59,7 +59,7 @@ export default function ProductsPage() {
                 <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-blue-600">{product.price}</span>
-                  <span className="text-blue-800 font-medium">查看详情 →</span>
+                  <span className="text-blue-600 font-medium">查看详情 →</span>
                 </div>
               </div>
             </Link>
@@ -68,4 +68,4 @@ export default function ProductsPage() {
       </div>
     </div>
   );
-}
+} 

@@ -2,15 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { products } from '@/data/products';
-import type { Product } from '@/data/products';
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
-export default function ProductDetail({ params }: Props) {
+export default async function Page({ params }: { params: { id: string } }) {
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
