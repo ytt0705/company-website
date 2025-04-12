@@ -43,9 +43,9 @@ const products: Product[] = [
 ];
 
 const contactInfo = {
-  phone: '400-123-4567',
-  email: 'contact@jijiapin.com',
-  address: '上海市浦东新区张江高科技园区',
+  phone: '13901052484',
+  email: 'arielyinjiatian@gmail.com',
+  address: '北京市顺义区艾迪城4-702',
   workingHours: '周一至周五 9:00-18:00'
 };
 
