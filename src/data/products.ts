@@ -16,7 +16,7 @@ export const products: Product[] = [
     category: "台秤系列",
     description: "高精度工业台秤，适用于工厂、仓库等场所的日常称重需求。采用进口传感器，确保称重精度和稳定性。",
     price: "¥5,999",
-    imageUrl: "/images/products/industrial-scale-1.jpg",
+    imageUrl: "https://placehold.co/600x400?text=工业台秤",
     features: [
       "高精度传感器",
       "防水防尘设计",
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: "天平系列",
     description: "实验室级精密电子天平，适用于实验室、珠宝店等需要高精度称重的场所。",
     price: "¥3,999",
-    imageUrl: "/images/products/precision-balance-1.jpg",
+    imageUrl: "https://placehold.co/600x400?text=电子天平",
     features: [
       "0.001g高精度",
       "自动校准",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     category: "叉车秤系列",
     description: "集搬运和称重于一体的叉车秤，提高物流效率，适用于仓储、物流等场所。",
     price: "¥12,999",
-    imageUrl: "/images/products/forklift-scale-1.jpg",
+    imageUrl: "https://placehold.co/600x400?text=叉车秤",
     features: [
       "边走边称",
       "无线传输",
