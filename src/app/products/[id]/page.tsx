@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { products } from '@/data/products';
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string } }) {
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
