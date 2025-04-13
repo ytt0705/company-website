@@ -74,7 +74,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-4">联系我们</h3>
               <p className="text-gray-700 mb-2">电话：13901052484</p>
               <p className="text-gray-700 mb-2">邮箱：arielyinjiatian@gmail.com</p>
-              <p className="text-gray-700">地址：上海市浦东新区</p>
+              <p className="text-gray-700">地址：北京市顺义区艾迪城4-712</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">关注我们</h3>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">公司地址</h3>
-              <p>上海市浦东新区</p>
+              <p>北京市顺义区艾迪城4-712</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">关注我们</h3>

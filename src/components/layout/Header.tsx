@@ -5,11 +5,11 @@ export default function Header() {
   return (
     <header>
       {/* 顶部横幅 */}
-      <div className="bg-blue-800 text-white py-3 px-4">
+      <div className="bg-[#1e3a8a] text-white py-3 px-4">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
-            <p className="text-sm font-medium">专业工业称重设备制造商</p>
-            <p className="text-sm">服务热线：139-0105-2484</p>
+            <p className="text-sm font-medium">技佳品端 | 专业工业称重设备制造商</p>
+            <p className="text-sm">联系电话：13901052484</p>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@ export default function Header() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-blue-800">极佳品端</span>
+              <span className="text-2xl font-bold text-[#1e3a8a]">技佳品端</span>
               <span className="text-gray-600">工业科技</span>
             </Link>
 
@@ -28,25 +28,25 @@ export default function Header() {
             <nav className="hidden md:flex space-x-8">
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-blue-800 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#1e3a8a] font-medium transition-colors"
               >
                 首页
               </Link>
               <Link 
                 href="/products" 
-                className="text-gray-700 hover:text-blue-800 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#1e3a8a] font-medium transition-colors"
               >
                 产品中心
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-blue-800 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#1e3a8a] font-medium transition-colors"
               >
                 关于我们
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-700 hover:text-blue-800 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#1e3a8a] font-medium transition-colors"
               >
                 联系我们
               </Link>

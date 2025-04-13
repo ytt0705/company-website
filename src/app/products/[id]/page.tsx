@@ -24,15 +24,6 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] font-['Microsoft YaHei'] flex flex-col">
-      <div className="bg-[#1e3a8a] text-white py-3 px-4">
-        <div className="container mx-auto">
-          <div className="flex justify-between items-center">
-            <p className="text-sm font-medium">技佳品端 | 专业工业称重设备制造商</p>
-            <p className="text-sm">联系电话：13901052484</p>
-          </div>
-        </div>
-      </div>
-
       <div className="flex-grow container mx-auto px-4 py-12">
         {/* 面包屑导航 */}
         <div className="mb-8">
@@ -129,34 +120,15 @@ export default async function Page({ params }: { params: { id: string } }) {
                   返回产品列表
                 </Link>
               </div>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-4">公司地址</h3>
+                <p>北京市顺义区艾迪城4-712</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* 页脚 */}
-      <footer className="bg-[#1e3a8a] text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">联系我们</h3>
-              <p className="mb-2">电话：13901052484</p>
-              <p>邮箱：arielyinjiatian@gmail.com</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">公司地址</h3>
-              <p>上海市浦东新区</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">关注我们</h3>
-              <p>微信公众号：技佳品端</p>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-blue-700 text-center">
-            <p>© 2024 技佳品端工业科技有限公司 版权所有</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 } 
