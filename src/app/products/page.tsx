@@ -5,18 +5,18 @@ import { products } from '@/data/products';
 
 export default function ProductsPage() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-[#f8fafc] font-['Microsoft YaHei'] flex flex-col">
       {/* 顶部横幅 */}
-      <div className="bg-blue-800 text-white py-3 px-4">
+      <div className="bg-[#1e3a8a] text-white py-3 px-4">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
-            <p className="text-sm font-medium">专业工业称重设备制造商</p>
-            <p className="text-sm">服务热线：400-123-4567</p>
+            <p className="text-sm font-medium">技佳品端 | 专业工业称重设备制造商</p>
+            <p className="text-sm">联系电话：13901052484</p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="flex-grow container mx-auto px-4 py-12">
         {/* 面包屑导航 */}
         <div className="mb-8">
           <nav className="flex" aria-label="Breadcrumb">
@@ -51,21 +51,45 @@ export default function ProductsPage() {
               </div>
               <div className="p-6">
                 <div className="mb-2">
-                  <span className="inline-block px-2 py-1 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                  <span className="inline-block px-2 py-1 text-sm font-medium text-[#1e3a8a] bg-blue-50 rounded-full">
                     {product.category}
                   </span>
                 </div>
                 <h2 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h2>
                 <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xl font-bold text-blue-600">{product.price}</span>
-                  <span className="text-blue-600 font-medium">查看详情 →</span>
+                  <span className="text-xl font-bold text-[#1e3a8a]">{product.price}</span>
+                  <span className="text-[#1e3a8a] font-medium">查看详情 →</span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
       </div>
+
+      {/* 页脚 */}
+      <footer className="bg-[#1e3a8a] text-white py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">联系我们</h3>
+              <p className="mb-2">电话：13901052484</p>
+              <p>邮箱：arielyinjiatian@gmail.com</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">公司地址</h3>
+              <p>上海市浦东新区</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">关注我们</h3>
+              <p>微信公众号：技佳品端</p>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-blue-700 text-center">
+            <p>© 2024 技佳品端工业科技有限公司 版权所有</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 } 
